@@ -7,19 +7,20 @@
 [![Build Status](https://travis-ci.org/clean-docker/Magento2.svg?branch=master)](https://travis-ci.org/clean-docker/Magento2)
 [![Build Status](https://images.microbadger.com/badges/image/rafaelcgstz/magento2.svg)](https://microbadger.com/images/rafaelcgstz/magento2)
 
-### Requirements
+### MacOS / Linux Requirements
 
-**MacOS:**
+**MacOS (Docker, Docker-compose and Docker-sync)**
 
-Install [Docker](https://docs.docker.com/docker-for-mac/install/), [Docker-compose](https://docs.docker.com/compose/install/#install-compose) and [Docker-sync](https://github.com/EugenMayer/docker-sync/wiki/docker-sync-on-OSX).
+```
+  brew tap caskroom/cask
+  brew cask install docker
+  brew install docker-compose
+  sudo gem install docker-sync
+```
 
-**Windows:**
+**Linux (Docker, Docker-compose)**
 
-Install [Docker](https://docs.docker.com/docker-for-windows/install/), [Docker-compose](https://docs.docker.com/compose/install/#install-compose) and [Docker-sync](https://github.com/EugenMayer/docker-sync/wiki/docker-sync-on-Windows).
-
-**Linux:**
-
-Install [Docker](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/) and [Docker-compose](https://docs.docker.com/compose/install/#install-compose).
+Use this [official Docker tutorial](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/).
 
 ### How to use
 
@@ -29,7 +30,7 @@ Execute in your terminal, change the *MYMAGENTO2* to use the name of your projec
 curl -s https://raw.githubusercontent.com/clean-docker/Magento2/master/init | bash -s MYMAGENTO2 clone
 ```
 
-If you want to install the Magento 2, use like that:
+If you want install the Magento 2, use like that:
 
 ```
 cd MYMAGENTO2
@@ -66,6 +67,8 @@ Enjoy your new panels!
 | `./xdebug`  |  Enable / Disable the XDebug | |
 | `./composer`  |  Use Composer commands | `./composer update` |
 
-### License
+### Create new alias
+Create your custom alias and put on sites-available directory (see a stagewest example). Access your /etc/hosts and add your custom alis like "127.0.0.1 stageswest.test".
 
-MIT © 2017 [Rafael Corrêa Gomes](https://github.com/rafaelstz/) and contributors.
+
+
