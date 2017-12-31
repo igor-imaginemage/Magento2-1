@@ -70,5 +70,5 @@ Enjoy your new panels!
 ### Create new alias
 Create your custom alias and put on sites-available directory (see a stagewest example). Access your /etc/hosts and add your custom alis like "127.0.0.1 stageswest.test".
 
-
-
+### Validate new alias
+Access the apache container with sudo root using the "docker-compose exec --user root apache bash" command and run the "cd /etc/apache2/sites-available/ && for i in *.conf; do a2ensite $i; done". After that restart the server to start using the new alias.

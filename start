@@ -1,10 +1,9 @@
 #!/usr/bin/env bash
 sudo ifconfig lo0 alias 10.254.254.254
-cd src && git config core.fileMode false && cd .. && \
+cd src && cd .. && \
 docker-sync start && \
 docker-compose up -d && \
-docker cp -a sites-available/. magento2_apache_1:/etc/apache2/sites-available/ && \
-docker cp -a sites-available/. magento2_apache_1:/etc/apache2/sites-enabled/ && \
+docker cp -a sites-available/. magento2_apache_1:/etc/apache2/sites-available/
 echo 'Virtual hosts updated!' && \
 echo '
 ===================== 🚀 Done 🚀 ===================
