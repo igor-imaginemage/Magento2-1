@@ -11,6 +11,8 @@ syncs:
     sync_excludes: [
     '.idea',
     '.git',
+    '.platform',
+    '.travis',
     'var/cache',
     'var/sessions',
     'var/page_cache',
@@ -20,12 +22,14 @@ syncs:
     'var/session',
     'var/tmp',
     'node_modules',
-    # 'vendor/*',
-    'pub/static'
+    'pub/static/*',
+    'pub/media/*'
     ]
     watch_excludes: [
     '.idea',
     '.git',
+    '.platform',
+    '.travis',
     'var/cache',
     'var/sessions',
     'var/page_cache',
@@ -35,6 +39,6 @@ syncs:
     'var/session',
     'var/tmp',
     'node_modules',
-    # 'vendor/*',
-    'pub/static'
+    'pub/static/*',
+    'pub/media/*'
     ]

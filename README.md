@@ -6,6 +6,7 @@
 
 [![Build Status](https://travis-ci.org/clean-docker/Magento2.svg?branch=master)](https://travis-ci.org/clean-docker/Magento2)
 [![Build Status](https://images.microbadger.com/badges/image/rafaelcgstz/magento2.svg)](https://microbadger.com/images/rafaelcgstz/magento2)
+[![Releases](https://img.shields.io/github/release/clean-docker/Magento2.svg)](https://github.com/clean-docker/Magento2/releases)
 
 ### MacOS / Linux Requirements
 
@@ -67,8 +68,6 @@ Enjoy your new panels!
 | `./xdebug`  |  Enable / Disable the XDebug | |
 | `./composer`  |  Use Composer commands | `./composer update` |
 
-### Create new alias
-Create your custom alias and put on sites-available directory (see a stagewest example). Access your /etc/hosts and add your custom alis like "127.0.0.1 stageswest.test".
+### License
 
-### Validate new alias
-Access the apache container with sudo root using the "docker-compose exec --user root apache bash" command and run the "cd /etc/apache2/sites-available/ && for i in *.conf; do a2ensite $i; done". After that restart the server to start using the new alias.
+MIT © 2018 [Rafael Corrêa Gomes](https://github.com/rafaelstz/) and contributors.
